@@ -6,7 +6,7 @@
  body {
   display: flex;
   flex-direction: column;
- 
+    height: 100vh;
  }
 
  header, footer, .one {
@@ -27,7 +27,7 @@
  header {
   display: flex;
   justify-content: space-between;
-  padding: 15px 30px;
+  padding: 15px 120px;
   flex-shrink: 0;
  }
 
@@ -40,10 +40,15 @@
  .one {
   display: flex;
   padding: 30px;
-  flex: 1 1 auto;
+  flex: 1 1 0;
   justify-content: center;
  }
  
+  img {
+    width: 500px;
+    height: 300px;
+  }
+
  .one div {
   width: 400px;
  }
@@ -58,11 +63,13 @@
   border-radius: 5px;
   background-color: #3882F6;
   border-width: 0;
+  color: #F9FAF8;
  }
  
  .two h2 {
   text-align: center;
   padding: 20px;
+  flex: 1 1 auto;
  }
 
  .boxes {
@@ -82,5 +89,58 @@
   padding: 15px;
   font-size: 80px;
   margin: 20px;
-
  }
+
+ .three {
+   display: flex;
+   flex-direction: column;
+   flex: 1 1 auto;
+   background-color: #E5E7EB;
+   /* text-align: center; */
+   justify-content: center;
+   align-items: center;
+ }
+
+ q {
+  font-size: 36px;
+  font-style: italic;
+  font-weight: light;
+  width: 800px;
+ }
+
+ .three p {
+  font-size: 28px;
+  font-weight: bold;
+  margin: 10px auto;
+  padding-left: 400px;
+ }
+
+ .four {
+  flex: 1 1 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ }
+
+ .singup {
+  color: #F9FAF8;
+  background-color: #3882F6;
+  height: 100px;
+  width: 700px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+ }
+
+ .singup button {
+  border: 1px solid #F9FAF8;
+ }
+
+ footer {
+   color: #F9FAF8;
+   padding: 15px;
+   text-align: center;
+ }
+
+
